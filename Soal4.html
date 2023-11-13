@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4</title>
+</head>
+
+<body>
+    <form action="index.html"><button type="submit">KEMBALI</button></form>
+    <script>
+        // Mengambil input golongan darah
+        var golonganDarah = prompt("Apa golongan darah kamu? (A, B, AB, O)").toUpperCase();
+
+        // Melakukan kondisional berdasarkan golongan darah
+        if (golonganDarah === "A") {
+            console.log("Sifatnya yang terorganisir, kritis, tenang dalam menghadapi masalah.");
+        } else if (golonganDarah === "B") {
+            console.log("Semangat yang tinggi, aktif, kreatif, dan selalu ingin tahu.");
+        } else if (golonganDarah === "AB") {
+            console.log("Memiliki karakter yang kritis, rasional, bertanggung jawab, suka menolong, dan mudah beradaptasi.");
+        } else if (golonganDarah === "O") {
+            console.log("Sikapnya yang mudah beradaptasi dengan lingkungan baru atau easy going.");
+        } else {
+            console.log("Golongan darah yang dimasukkan tidak valid.");
+        }
+    </script>
+</body>
+
+</html>

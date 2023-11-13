@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 5</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.html"><button type="submit">KEMBALI</button></form>
+    <p id="changeSentence" onclick="changeText()">Saya merasa belum bisa belajar JavaScript</p>
+
+    <script>
+        function changeText() {
+            var element = document.getElementById('changeSentence');
+
+            // Mengubah teks
+            element.textContent = "Ternyata saya masih kurang berlatih belajar JavaScript";
+
+            // Mengubah warna background menjadi hijau dan font menjadi merah
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "red";
+
+            // Menghapus event listener setelah diklik sekali
+            element.removeEventListener('click', changeText);
+        }
+    </script>
+</body>
+
+</html>
